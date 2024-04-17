@@ -2,37 +2,39 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav li {
+  display: inline;
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav li:not(:last-child)::after {
+  content: " | "
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  margin: 0 auto;
+}
+th, td {
+  border: 1px solid black;
+  padding: 32px;
+  text-align: center;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Define styles for the puzzle board cell states */
+.state-0 {
+  background-color: white; /* State 0 background color */
+}
+
+.state-1 {
+  background-color: rgb(234, 126, 216); /* State 1 background color */
+}
+
+.state-2 {
+  background-color: rgb(136, 188, 226); /* State 2 background color */
 }

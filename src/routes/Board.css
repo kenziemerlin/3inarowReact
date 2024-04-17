@@ -1,0 +1,27 @@
+.board {
+    margin-top: 20px;
+  }
+  
+  .board table {
+    border-collapse: collapse;
+  }
+  
+  .board td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .board .state-0 {
+    background-color: #fff;
+  }
+  
+  .board .state-1 {
+    background-color: #ffcccc; /* Color for state 1 */
+  }
+  
+  .board .state-2 {
+    background-color: #99ff99; /* Color for state 2 */
+  }
